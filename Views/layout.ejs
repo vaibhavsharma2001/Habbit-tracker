@@ -1,0 +1,53 @@
+<html>
+    <head>
+        <title>Habbit Tracker</title>
+        <!-- CSS only -->
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;900&display=swap" rel="stylesheet">
+        <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+        <script src="https://kit.fontawesome.com/a79f83ae93.js" crossorigin="anonymous"></script>
+        <script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+        <link rel="stylesheet" href="/Css/main.css"/>
+
+        <% if(filepath=='auth') {%>
+        <link rel="stylesheet" type="text/css" href="/Css/login.css"/>
+        <%} %>
+
+        <% if(filepath=='home') {%>
+        <link rel="stylesheet" href="/Css/home.css"></link> 
+        <link rel="stylesheet" href="/Css/navbar.css"/>
+        <%} %>
+
+        <% if(filepath=='reset-password') {%>
+        <link rel="stylesheet" type="text/css" href="/Css/reset-password.css"/>
+        <%} %>
+
+        <% if(filepath=='session-expired') {%>
+        <link rel="stylesheet" type="text/css" href="/Css/session-expired.css"/>
+        <%} %>
+    </head>
+    <body>
+        
+        <%- body -%>
+
+    <% if(filepath=='home') {%>     
+    <script src="/Js/navbar.js"></script>
+    <script src="/Js/homepageclassFiles.js"></script>
+    <script src="/Js/calenderpageclassFiles.js"></script>
+    <script src="/Js/userpageclassFiles.js"></script>
+    <script src='/Js/notificationpageclassFiles.js'></script>
+    <script src="/Js/home.js"></script>
+    <%} %>
+
+    <% if(filepath=='auth') {%>
+    <script src="/Js/auth.js"></script>
+    <%} %>
+
+    <% if(filepath=='reset-password') {%>
+    <script src="/Js/reset-password.js"></script>
+    <%} %>
+    </body>
+</html>

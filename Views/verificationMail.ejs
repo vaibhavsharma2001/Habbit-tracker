@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>Forgot Password</title>
+        <style>
+            h1,h2{
+                font-weight: bold;
+                font-family:monospace;
+                color: purple
+            }
+            button{
+                background-color: purple;
+                color: white;
+                width: 120px;
+                height: 30px;
+                border: 1px solid black;
+                border-radius: 5px;
+            }
+        </style>
+    </head>
+    <body>
+        <h1> Habbit Tracker</h1>
+        <div>
+            <h2>Hi <%= user.name %></h2>
+            <p>Looks like you tried to access your account but forgot your password...</p>
+            <p>Please click on the button below to reset Password</p>
+            <a href="https://habbit-tracker-three.vercel.app/users/login/reset-password/<%=user.id%>/<%= token %>">
+                <button>Reset Password</button>
+            </a>    
+        </div>
+
+    </body>
+</html>

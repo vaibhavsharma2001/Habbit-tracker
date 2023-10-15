@@ -1,0 +1,153 @@
+<div id="main">
+    <div id="image">
+        <div id="logo">
+            <img src="/Img/logo.png"/>
+        </div>
+    </div>
+    <div id="error-message"><%= message %></div>
+    <div id="loginSide">
+        <div id="container">
+            <h1>Log In...</h1>
+            <section class="vh-100">
+                <div class="container py-5 h-100">
+                  <div class="row d-flex align-items-center justify-content-center h-100">
+                    <div id="loginForm" class="col-md-7 col-lg-8 col-xl-8 offset-xl-1">
+                      <form id= "loginSection" action="/users/login/password" method="post" enctype="multipart/form-data">
+                        <!-- Email input -->
+                
+                        <div class="form-outline mb-4">
+                          <input type="email" id="form1Example13" name="email" class="form-control form-control-lg" />
+                          <label class="form-label" for="form1Example13">Email address</label>
+                        </div>
+              
+                        <!-- Password input -->
+                        <div class="form-outline mb-4">
+                          <input type="password" id="form1Example23" name="password" class="form-control form-control-lg" />
+                          <label class="form-label" for="form1Example23">Password</label>
+                        </div>
+      
+                        <div id="openVerfication" class="d-flex justify-content-around align-items-center mb-4">
+                          <!-- Checkbox -->
+                          <a  id="openVerification" href="#">Forgot password?</a>
+                        </div>
+                        
+                        <div class="g-recaptcha"  id="captcha1" widget_id="1" style="margin-bottom: 8px;" data-sitekey="6LccdgYkAAAAABcFJURYqOyPyxy_kNM56om5BWmv"></div>
+                        <!-- Submit button -->
+                        <button type="submit" id="loginFromSubmit" class="btn btn-primary btn-lg btn-block">Sign in</button>
+
+
+                        <div id="openSignUp" class="text-center">
+                        <a href="#">New Member? Click Here to SignUp</a>
+                        </div>
+
+                        <div class="d-flex my-3">
+                          <hr/>
+                          <p>OR</p>
+                          <hr/>
+                        </div>
+
+                        
+              
+                        <a class="btn btn-primary btn-lg btn-block" style="background-color: #cb4535; color: white" href="/users/auth/google"
+                          role="button">
+                          <i class="fa-brands fa-google" style="color: white"></i> Continue with Google
+                        </a>
+                        <a class="btn btn-primary btn-lg btn-block" style="background-color: #000000; color: white" href="/users/auth/github"
+                          role="button">
+                          <i class="fa-brands fa-github" style="color: white"></i> Continue with Github</a>
+              
+                      </form>
+                    </div>
+                    <div id="signForm" class="col-md-7 col-lg-8 col-xl-8 offset-xl-1">
+                      <form id="signinSection" action="/users/sign-up/password" method="post" enctype="multipart/form-data">
+                        <!-- Email input -->
+                        <div class="form-outline mb-4">
+                            <input type="text" id="form1Example03" name="userName" class="form-control form-control-lg" />
+                            <label class="form-label" for="form1Example03">User Name</label>
+                        </div>
+        
+                        <div class="form-outline mb-4">
+                          <input type="email" id="signform1Example13"  name="email" class="form-control form-control-lg" />
+                          <label class="form-label" for="signform1Example13">Email address</label>
+                        </div>
+              
+                        <!-- Password input -->
+                        <div class="form-outline mb-4">
+                          <input type="password" id="signform1Example23" name="password" class="form-control form-control-lg" />
+                          <label class="form-label" for="signform1Example23">Password</label>
+                        </div>
+              
+                        <div class="form-outline mb-4">
+                            <input type="password" id="form1Example33" class="form-control form-control-lg" />
+                            <label class="form-label" for="form1Example33">Confirm Password</label>
+                        </div>
+                        <div id="isMatching" class="form-outline mb-4">
+
+                        </div>
+                        <!-- Submit button -->
+                        <div class="g-recaptcha" id="captcha2" widget_id="2" style="margin-bottom: 8px;" data-sitekey="6LccdgYkAAAAABcFJURYqOyPyxy_kNM56om5BWmv"></div>
+                        <button type="submit" id="signFormSubmit" class="btn btn-primary btn-lg btn-block">Sign Up</button>
+                        
+                        <div id="openLogin" class="mx-5">
+                            <a href="#">Already a Member? Click Here to Login</a>
+                        </div>
+                        
+                        <div class="d-flex my-3">
+                          <hr/>
+                          <p>OR</p>
+                          <hr/>
+                        </div>
+          
+                        
+                        <a class="btn btn-primary btn-lg btn-block" style="background-color: #cb4535; color: white" href="/users/auth/google"
+                          role="button">
+                          <i class="fa-brands fa-google" style="color: white"></i> Continue with Google
+                        </a>
+                        <a class="btn btn-primary btn-lg btn-block" style="background-color: #000000; color: white" href="/users/auth/github"
+                          role="button">
+                          <i class="fa-brands fa-github" style="color: white"></i> Continue with Github</a>
+              
+                      </form>
+                    </div>
+                    <div id="verificationForm" class="col-md-7 col-lg-8 col-xl-8 offset-xl-1">
+                      <div id="openLoginagain" class="text-center my-3">
+                        <a href="#">Back</a>
+                      </div>
+                      <div id="verifyForm">
+                      <form id="forgotForm" action="/users/login/forgotpassword" method="post" enctype="multipart/form-data">
+                        <!-- Email input -->
+                
+                        <div class="form-outline mb-4">
+                          <input type="email" id="verifyform1Example13" name="email" class="form-control form-control-lg" />
+                          <label class="form-label" for="form1Example13">Please enter your Email address</label>
+                        </div>
+              
+                        
+                        <!-- Submit button -->
+                        <button id="verfication" type="submit" class="btn btn-primary btn-lg btn-block">Send Verification Link</button>
+                      </form>
+                      </div>
+                      <div id="linksendSuccess">
+                        <h3 style="color: blue;">Yay...</h3>
+                        Verification Link Sent to registered Email Address.<br/>
+                        Hurry up six minutes remaining before verfication link expires...
+                      </div>
+                      <div id="openverifyAgain" class="text-center my-3"><a href="#">Give us a new Email address</a></div>
+                      <div id="linksendFailure404" style="color: red;">
+                        <h4>Looks like you have send wrong email address to us...</h4>
+                        User for specified Email Address was not found.
+                      </div>
+                      <div id="linksendFailure500" style="color: red;">
+                        <h2 style="color: red;">Oops...</h2>
+                        There is Problem with our server please try again later.
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </section>
+        </div>
+    </div>
+</div>
+
+<script src="https://www.google.com/recaptcha/api.js" async defer>
+</script>
