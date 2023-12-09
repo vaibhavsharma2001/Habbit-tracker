@@ -4,7 +4,7 @@ var User = require('../Models/user');
 const bcrypt = require('bcryptjs');
 const request = require('request');
 const saltRounds = 10;
-
+require('dotenv').config();
 var strategy = new LocalStrategy({ // or whatever you want to use
     usernameField: 'email',    // define the parameter in req.body that passport can use as username and password
     passwordField: 'password'
