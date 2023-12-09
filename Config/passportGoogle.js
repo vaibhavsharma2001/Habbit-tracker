@@ -1,6 +1,6 @@
 //console.log(process.env.GOOGLE_clientID);
 const googleStrategy = require('passport-google-oauth').OAuth2Strategy;
-
+require('dotenv').config();
 const passport = require('passport');
 const crypto = require('crypto');
 const User = require('../Models/user');
