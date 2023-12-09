@@ -2,7 +2,7 @@ var GitHubStrategy = require('passport-github').Strategy;
 const passport = require('passport');
 const crypto = require('crypto');
 const User = require('../Models/user');
-
+require('dotenv').config();
 passport.use(new GitHubStrategy({
     clientID: process.env.githubSignin_clientID,
     clientSecret: process.env.githubSignin_clientSecret,
