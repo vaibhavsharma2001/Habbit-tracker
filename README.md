@@ -16,7 +16,8 @@ NodeJS
 CLI
 Installation
 Clone the latest Repository
-git clone https://github.com/rahulsups/habit-tracker.git
+
+https://github.com/vaibhavsharma2001/Habbit-tracker.git
 
 Into the project directory
 cd habit-tracker
@@ -27,8 +28,10 @@ npm install
 Then simply start your app
 npm start
 
-The Server should now be running at http://localhost:3000/
-Folder Structure
+The Server should now be running 
+
+<br>Folder Structure<br>
+
 habit-tracker
 ├── assets
 │ --- ├── calendar.svg
